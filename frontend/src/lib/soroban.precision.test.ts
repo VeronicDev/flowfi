@@ -29,7 +29,7 @@ describe("Soroban amount precision boundaries and large integers", () => {
   });
 
   it("handles rounding boundaries and fractional truncation correctly", () => {
-    expect(toBaseUnits("1.123456789", 7)).toBe(1234568n);
+    expect(toBaseUnits("1.123456789", 7)).toBe(11234568n);
   });
 
   it("rejects non-positive numbers with SorobanCallError", () => {
